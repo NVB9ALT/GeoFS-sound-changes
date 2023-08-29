@@ -64,7 +64,7 @@ audio.stop();
 	} else if (checkPos()[1] >= 0 && checkPos()[0] < 0.99 && audio.on == 0 && geofs.preferences.sound == 1) {
 audio.on = 1
    }
-   if (checkPos()[0] > 0.99 && checkPos()[0] < 1 && audio.on == 0 && geofs.preferences.sound == 1 && (geofs.camera.currentModeName == "free" || geofs.camera.currentModeName == "chase")) {
+   if (checkPos()[0] > 0.99 && checkPos()[0] < 1 && geofs.preferences.sound == 1 && (geofs.camera.currentModeName == "free" || geofs.camera.currentModeName == "chase")) {
 console.log("Sonic boom time")
 audio.impl.html5.playFile("https://142420819-645052386429616373.preview.editmysite.com/uploads/1/4/2/4/142420819/sonicboom.mp3")
    }
