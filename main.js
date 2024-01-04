@@ -38,7 +38,7 @@ function checkPos() {
     return [e,f];
   };
 function getJetSounds() {
-   if (geofs.aircraft.instance.id == 7 || geofs.aircraft.instance.id == 2857 || geofs.aircraft.instance.id == 4172 || geofs.aircraft.instance.id == 2364) {
+   if (geofs.aircraft.instance.id == 7 || geofs.aircraft.instance.id == 2857 || geofs.aircraft.instance.id == 4172 || geofs.aircraft.instance.id == 2364 || geofs.aircraft.instance.id == 3591) {
 geofs.aircraft.instance.definition.sounds.forEach(function(e){
    if (e.file.includes("f16") && e.id.includes("rpm2")) {
 if (checkPos()[0] >= 0.99 && checkPos()[1] < 0.99) {
